@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Sumit\Assignment\super-investing-gemini-streamlit - Copy
+plugins: anyio-4.14.2, langsmith-0.11.2
+collecting ... collected 9 items
+
+tests/test_logic.py::test_loads_eight_sources_and_strips_html_comments PASSED [ 11%]
+tests/test_logic.py::test_validation_retries_once_then_finishes PASSED   [ 22%]
+tests/test_logic.py::test_structure_checker_accepts_valid_sections_and_sources PASSED [ 33%]
+tests/test_logic.py::test_structure_checker_flags_missing_heading_and_fake_source PASSED [ 44%]
+tests/test_logic.py::test_structure_checker_rejects_brief_without_citations PASSED [ 55%]
+tests/test_logic.py::test_uploaded_documents_receive_source_ids_and_metadata PASSED [ 66%]
+tests/test_logic.py::test_uploaded_documents_remove_html_comments PASSED [ 77%]
+tests/test_logic.py::test_uploaded_empty_document_is_rejected PASSED     [ 88%]
+tests/test_logic.py::test_uploaded_documents_after_cutoff_are_excluded PASSED [100%]
+
+============================== warnings summary ===============================
+..\..\..\Users\adity\AppData\Roaming\Python\Python314\site-packages\google\genai\types.py:42
+  C:\Users\adity\AppData\Roaming\Python\Python314\site-packages\google\genai\types.py:42: DeprecationWarning: '_UnionGenericAlias' is deprecated and slated for removal in Python 3.17
+    VersionedUnionType = Union[builtin_types.UnionType, _UnionGenericAlias]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 9 passed, 1 warning in 1.77s =========================
